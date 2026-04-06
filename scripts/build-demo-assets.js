@@ -6,7 +6,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const rootDir = join(__dirname, "..");
 const distDir = join(rootDir, "dist");
 const distDemoDir = join(distDir, "demo");
-const sourceDemoDir = join(rootDir, "src", "demo");
+const sourceDemoDir = join(rootDir, "demo");
 
 mkdirSync(distDemoDir, { recursive: true });
 
@@ -18,7 +18,7 @@ const destTvPath = join(distDemoDir, "assets", "charting_library");
 
 if (!existsSync(sourceTvPath)) {
   throw new Error(
-    "Missing TradingView assets at src/demo/assets/charting_library. Place private Charting Library files there before build.",
+    "Missing TradingView assets at demo/assets/charting_library. Place private Charting Library files there before build.",
   );
 }
 

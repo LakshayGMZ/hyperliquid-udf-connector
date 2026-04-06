@@ -1,4 +1,4 @@
-import { HyperliquidUdfConnector } from "../hyperliquid-udf-connector";
+import { HyperliquidUdfConnector } from "../src/hyperliquid-udf-connector";
 
 declare global {
   interface Window {

@@ -12,7 +12,7 @@ Standalone, open-source connector that implements TradingView Datafeed API-compa
 ## Install and try demo
 ### 1. Add TradingView Charting Library into demo assets
 
-Download/Clone the Charting Library [from here](https://github.com/tradingview/charting_library) and place it here:
+Download/Clone the Charting Library [from here](https://github.com/tradingview/charting_library) **[needs license from TradingView for library access]** and place it here:
 
 - `/src/demo/assets/`
 
