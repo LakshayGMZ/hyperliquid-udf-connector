@@ -1,0 +1,31 @@
+{
+  "name": "hyperliquid-tv-udf-connector",
+  "version": "0.1.0",
+  "description": "TradingView Datafeed API connector for Hyperliquid",
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "npm install && tsc -p tsconfig.json && node scripts/rewrite-dist-imports.js && node scripts/build-demo-assets.js",
+    "clean": "rm -rf dist",
+    "check": "tsc --noEmit -p tsconfig.json",
+    "demo": "npm run build && http-server dist"
+  },
+  "keywords": [
+    "hyperliquid",
+    "tradingview",
+    "charting-library",
+    "udf",
+    "datafeed"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "http-server": "^14.1.1"
+  }
+}

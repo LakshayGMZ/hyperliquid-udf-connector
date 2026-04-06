@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hyperliquid UDF Connector Demo</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./assets/charting_library/charting_library.js"></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <h1>Hyperliquid x TradingView Demo</h1>
+        <p>End-to-end demo using this connector package.</p>
+      </div>
+      <div class="status" id="status">Idle</div>
+    </header>
+
+    <section class="controls">
+      <label>
+        Symbol
+        <input id="symbolInput" value="BTC" />
+      </label>
+      <label>
+        Interval
+        <select id="intervalSelect">
+          <option value="1">1m</option>
+          <option value="5">5m</option>
+          <option value="15" selected>15m</option>
+          <option value="60">1h</option>
+          <option value="240">4h</option>
+          <option value="1D">1D</option>
+          <option value="1W">1W</option>
+        </select>
+      </label>
+      <button id="loadChartButton">Load Chart</button>
+    </section>
+
+    <main id="tv_chart_container"></main>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>

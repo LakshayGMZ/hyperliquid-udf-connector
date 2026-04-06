@@ -1,0 +1,12 @@
+node_modules
+dist
+*.log
+.DS_Store
+
+# TradingView Charting Library is private and must never be committed
+charting_library
+public/charting_library
+src/charting_library
+src/demo/assets/charting_library
+dist/demo/assets/charting_library
+**/charting_library/*
